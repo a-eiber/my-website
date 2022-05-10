@@ -45,7 +45,7 @@ function Home() {
       </div>
       <div className="home-bottom">
         <p>
-          {`Hi, thanks for visiting. My name's Alec and I'm a software developer and recent bootcamp graduate. Prior to moving into tech, I was in the Navy for six years, working mostly in leadership positions in operations and anti-terrorism.`}
+          {`Hi, thanks for visiting. My name's Alec and I'm a software engineer and recent bootcamp graduate. Prior to moving into tech, I was in the Navy for six years, working mostly in leadership positions in operations and anti-terrorism.`}
         </p>
 
         <p>
