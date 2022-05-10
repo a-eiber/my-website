@@ -1,38 +1,262 @@
-.App {
-  text-align: center;
+.main {
+  font-family: 'Roboto Flex', sans-serif;
+  width: 900px;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-link {
+  margin-right: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #002984;
+  font-weight: bold;
+}
+
+.profile-picture {
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+}
+
+.home-page {
   display: flex;
   flex-direction: column;
+}
+
+.home-top,
+.home-top > p {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  font-size: larger;
+  font-weight: lighter;
+}
+
+.home-top > p > svg {
+  margin-right: 10px;
+}
+
+.home-top > img {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.home-bottom {
+  margin-left: 30px;
+  font-size: large;
+  font-weight: lighter;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.skills > li {
+  display: flex;
+  align-self: center;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.25rem;
+  background-color: #b3e5fc;
+  border-radius: 10%;
+}
+
+.contact {
+  display: flex;
+  padding-left: 0;
+}
+
+.contact > li {
+  list-style: none;
+}
+
+.contact > li > a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+.contact > li > a > svg {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.contact > li > a:hover > svg {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.contact > li > a:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #002984;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.contact > li > a:hover:before {
+  top: 0;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+}
+
+button {
+  background-color: #002984;
   color: white;
+  text-transform: uppercase;
+  border: 1px solid #002984;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  color: goldenrod;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.project {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.project-description {
+  margin-left: 3rem;
+}
+
+.project-pic > img {
+  height: 250px;
+  width: 300px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form > label {
+  margin-bottom: 0.5rem;
+}
+
+.form > input,
+textarea {
+  margin-bottom: 1rem;
+  line-height: 2;
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: 'Roboto Flex', sans-serif;
+}
+.form > button {
+  width: 100%;
+}
+
+.contact-form {
+  font-size: large;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .home-top > img {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .header-link {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .home-top,
+  .home-top > p {
+    flex-direction: column;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .skills,
+  .contact {
+    justify-content: center;
+  }
+
+  .project-title {
+    text-align: center;
+  }
+
+  .project-pic {
+    text-align: center;
+  }
+
+  .project {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .project-description {
+    margin-left: 0;
+  }
+
+  .project-description > h2 {
+    text-align: center;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .contact {
+    margin: 0;
   }
 }
