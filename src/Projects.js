@@ -26,7 +26,7 @@ function Projects() {
 
       <div className="project">
         <div className="project-pic">
-          <img src="./poke-mart.jpg" alt="poke mart website" />
+          <img src="./poke-mart2.jpg" alt="poke mart website" />
         </div>
         <div className="project-description">
           <h2>Poké Mart Online Store</h2>
@@ -42,11 +42,11 @@ function Projects() {
             React-Bootstrap, JSON Web Tokens, React-Toastify, Git/GitHub, Webpack, Heroku
           </p>
 
-          <a href="https://fsa-poke-mart.herokuapp.com/" className="btn">
+          <a href="https://poke-mart-fsa.herokuapp.com/" className="btn">
             <button type="button">Live Demo</button>
           </a>
 
-          <a href="https://github.com/Aquamarine-gs/GraceShopper" className="btn">
+          <a href="https://github.com/a-eiber/poke-mart" className="btn">
             <button type="button">Source Code</button>
           </a>
         </div>

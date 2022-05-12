@@ -9,7 +9,7 @@ function Header() {
         </Link>
       </div>
       <div>
-        <a href="/resume.pdf" className="header-link">
+        <a href="/resume-v2.pdf" className="header-link">
           Resume
         </a>
         <Link to="/projects" className="header-link">
