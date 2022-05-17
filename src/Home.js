@@ -45,17 +45,17 @@ function Home() {
       </div>
       <div className="home-bottom">
         <p>
-          {`Hi, thanks for visiting. My name's Alec and I'm a software engineer and recent bootcamp graduate. Prior to moving into tech, I was in the Navy for six years, working mostly in leadership positions in operations and anti-terrorism.`}
+          {`Hi, thanks for visiting. My name's Alec and I'm a software engineer and coding bootcamp graduate. Prior to moving into tech, I was a Naval Officer for six years, working in leadership positions in operations and anti-terrorism.`}
         </p>
 
         <p>
-          After the service, I found myself drawn to software development because I always had an
-          interest in coding and creating applications. I wanted a formal education in full stack
-          development, so I applied to Fullstack Academy and was fortunate enough to be accepted and
-          graduate.
+          After my time in the US Navy, I found myself drawn to software development because I
+          always had an interest in coding and creating applications. I wanted a formal education in
+          full stack development, so I applied to Fullstack Academy and was fortunate enough to be
+          accepted and graduate.
         </p>
 
-        <p>{`I really enjoy being a part of something impactful to people, and right now, I'm looking for opportunities to join a company as a software developer, again to make an impact but also learn as much as I can.`}</p>
+        <p>{`I really enjoy being a part of something impactful to people, and right now, I'm looking for opportunities to join a company as a software engineer, again to make an impact but also learn as much as I can.`}</p>
       </div>
     </div>
   );

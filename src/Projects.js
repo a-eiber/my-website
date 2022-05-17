@@ -4,10 +4,16 @@ function Projects() {
       <h1 className="project-title">Projects</h1>
       <div className="project">
         <div className="project-pic">
-          <img src="./tiger.jpg" alt="tiger sports website" />
+          <a href="https://www.github.com/a-eiber/tigerbasketball">
+            <img src="./tiger.jpg" alt="tiger sports website" />
+          </a>
         </div>
         <div className="project-description">
-          <h2>Tiger Sports Basketball League</h2>
+          <h2>
+            <a href="https://www.github.com/a-eiber/tigerbasketball">
+              Tiger Sports Basketball League
+            </a>
+          </h2>
           <p>
             Web application used to administer a basketball league, displaying the schedule,
             results, standings, and news updates. Built a dashboard for site administrator to log in
@@ -26,10 +32,14 @@ function Projects() {
 
       <div className="project">
         <div className="project-pic">
-          <img src="./poke-mart2.jpg" alt="poke mart website" />
+          <a href="https://poke-mart-fsa.herokuapp.com/">
+            <img src="./poke-mart2.jpg" alt="poke mart website" />
+          </a>
         </div>
         <div className="project-description">
-          <h2>Poké Mart Online Store</h2>
+          <h2>
+            <a href="https://poke-mart-fsa.herokuapp.com/">Poké Mart Online Store</a>
+          </h2>
           <p>
             An online e-commerce version of the store popularly found in Pokémon games. Guests can
             add items to their cart, edit cart items, and checkout, with cart items saved in local
