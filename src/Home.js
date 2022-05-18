@@ -1,6 +1,12 @@
-import { BsBriefcase, BsPinMapFill, BsLinkedin, BsGithub } from 'react-icons/bs';
-import { MdEmail } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import { BsBriefcase, BsPinMapFill } from 'react-icons/bs';
+import {
+  SiJavascript,
+  SiReact,
+  SiRedux,
+  SiPostgresql,
+  SiNodedotjs,
+  SiExpress,
+} from 'react-icons/si';
 
 function Home() {
   return (
@@ -16,29 +22,24 @@ function Home() {
           </p>
 
           <ul className="skills">
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Redux</li>
-            <li>PostgreSQL</li>
-            <li>Node</li>
-            <li>Express</li>
-          </ul>
-
-          <ul className="contact">
             <li>
-              <a href="https://www.linkedin.com/in/aleceiber">
-                <BsLinkedin />
-              </a>
+              <SiJavascript className="skill-items" /> JavaScript
             </li>
             <li>
-              <a href="https://www.github.com/a-eiber">
-                <BsGithub />
-              </a>
+              <SiReact className="skill-items" /> React
             </li>
             <li>
-              <Link to="/contact">
-                <MdEmail />
-              </Link>
+              <SiRedux className="skill-items" />
+              Redux
+            </li>
+            <li>
+              <SiPostgresql className="skill-items" /> PostgreSQL
+            </li>
+            <li>
+              <SiNodedotjs className="skill-items" /> Node
+            </li>
+            <li>
+              <SiExpress className="skill-items" /> Express
             </li>
           </ul>
         </div>
